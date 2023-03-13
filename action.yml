@@ -1,0 +1,11 @@
+name: 'cmkae-custome action'
+author: 'darshit'
+branding:
+  icon: 'archive'
+  color: 'yellow'
+description: 'for cpp programe build'
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: $GITHUB_ACTION_PATH/entrypoint.sh
